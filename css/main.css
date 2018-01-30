@@ -465,8 +465,7 @@ img {
 
 .center_right_dh_two_but {
 	border: 1px solid #000;
-	margin-left: 450px;
-	margin-top: 35px;
+	margin: 35px auto;
 	width: 142px;
 	height: 40px;
 	-moz-border-radius: 3px;
@@ -481,14 +480,19 @@ img {
 	text-decoration: none;
 	color: #000
 }
-
+.center_right_dh_two h2 {
+	font-family:'微软雅黑';
+	font-weight:bold;
+	margin: 0 auto;
+}
 .center_right_dh_two p {
-	width: 400px;
-	letter-spacing: 2px;
+	text-indent:28px;
+	letter-spacing: 1px;
 	font-family: "微软雅黑";
 	font-size: 14px;
-	margin-left: 200px;
-	line-height: 30px
+	margin:20px 100px;
+	line-height: 30px;
+	text-align: left;
 }
 
 .cen_bom_div {
