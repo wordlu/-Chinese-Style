@@ -27,7 +27,7 @@ body {
 	height: 100%;
 	overflow-x: hidden;
 	background: url("../images/mainbg.jpg");
-	background-size: 100% 100%
+	background-size: cover;
 }
 body html {
 	height: 100%；;
@@ -155,9 +155,9 @@ img {
 	width: 100%;
 	height: 350px;
 	background: #46474C;
-	/* position: absolute; */
+	position: absolute;
 	/* bottom: 0; */
-	/* margin-top:  -500px; */
+	margin-top: 2500px;
 }
 
 .foot_left {
@@ -452,6 +452,7 @@ img {
 	min-height: 100%;
 	position: relative;
 	margin-bottom: -500px;
+	/* height: 2000px; */
 }
 .col_nav {
 	width: 100%;
