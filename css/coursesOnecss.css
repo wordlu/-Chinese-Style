@@ -2,10 +2,10 @@
 /* CSS Document */
 
 .teacher_center h1{
-	font-size:20px;
+	font-size: 18px;
 	margin-top:50px;
-	font-weight:100;
-	color:#595959;
+	font-weight: normal;
+	color: #040404;
 	margin-left:105px;
 	font-family:"微软雅黑";
 	}
@@ -29,7 +29,6 @@
 .teacher_center{ border:1px solid #fff;
 	position:relative;
 	margin-top:0px;
-	background-color:#fff;
 	}
 
 .teacher_center h3{
@@ -61,5 +60,5 @@ table.gridtable td {
 	background-color: #ffffff;
 }
 .ddiv{
-	border:1px solid #F5F5F5;	background-color:#F5F5F5;
+	border:1px solid #F5F5F5;	background:url("../images/mainbg.jpg") ;
 	}

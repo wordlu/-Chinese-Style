@@ -18,6 +18,9 @@ a {
 a:-webkit-any-link {
 	cursor: pointer;
 }
+a:link {
+	/* color: #0f0f0f; */
+}
 li {
 	list-style: none;
 }
@@ -91,7 +94,7 @@ img {
 .logoa {
 	color: #fff;
 	text-decoration: none;
-	transition: all 0.3s
+	transition: all 0.3s;
 }
 
 .logoa:hover {
@@ -157,7 +160,7 @@ img {
 	background: #46474C;
 	position: absolute;
 	/* bottom: 0; */
-	margin-top: 2500px;
+	/*margin-top: 2500px;*/
 }
 
 .foot_left {
