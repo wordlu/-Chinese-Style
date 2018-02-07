@@ -11,11 +11,10 @@
 .hra{
 	margin-left:105px;
 	margin-top:10px;
-        border:none;
-	
-        height:1px;
+	border:none;
+	height:1px;
 	width:180px;
-	background-color:#46474C;
+	background-color: #f3f3f3;
 	}
 .hrb{
 	width:820px;
@@ -25,7 +24,8 @@
 	margin-left:287px;
 	margin-top:-1px;
 	}
-.teacher_center{ border:1px solid #fff;
+.teacher_center{
+	border:1px solid #fff;
 	position:relative;
 	margin-top:0px;
 	}
