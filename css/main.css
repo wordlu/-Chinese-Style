@@ -1473,3 +1473,15 @@ img {
 	line-height: 25px;
 }
 /*教师详情页*/
+.teachers_a .detail a:-webkit-any-link {
+	color: #990000;
+}
+.cont .tea_name {
+	font-size: 35px;
+	font-family: "楷体";
+	font-weight: bold;
+	color: rgb(198, 0, 15);
+}
+.teachers_a .tea_con:-webkit-any-link {
+	color: #0f0f0f;
+}
