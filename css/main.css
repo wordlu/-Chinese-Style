@@ -1485,3 +1485,12 @@ img {
 .teachers_a .tea_con:-webkit-any-link {
 	color: #0f0f0f;
 }
+.teacher_center .stu_work {
+	text-align: center;
+	margin-top: 40px;
+	color: rgb(198, 0, 15);
+	font-family: "楷体";
+	font-weight: bold;
+	font-size: 40px;
+	border-bottom: 1px solid #dddddd;
+}
