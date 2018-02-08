@@ -1,13 +1,13 @@
 @charset "utf-8";
 
 div {
-	border: 0px solid transparent
+	border: 0px solid transparent;
 }
 
 * {
 	margin: 0px auto;
 	padding: 0px;
-	list-style-type: none
+	list-style-type: none;
 }
 
 a {
@@ -1407,7 +1407,69 @@ img {
 .teacher_center h1 {
 	margin-bottom: 60px;
 }
+/*课程导航详情页*/
+.cont {
+	width:800px;
+	margin-top: 10px;
+}
+.cont dt img {
+	width: 150px;
+	height: 150px;
+	float: left;
+	border-radius: 5px;
+}
+.cont dd {
+	float: left;
+	margin-left: 100px;
+	line-height: 40px;
+	cursor: pointer;
 
-
-
-
+}
+.cont dd a:-webkit-any-link{
+	color: #000;
+}
+.cont dd a:hover {
+	color: rgb(198, 0, 15)	;
+}
+.cont .course_nav {
+	width: 800px;
+	height: 35px;
+	background: #dddddd;
+	position: relative;
+	top: 180px;
+	border-radius: 2px;
+	/*border-bottom: 1px solid #bac9c6;*/
+}
+.cont .nav_l {
+	width: 10px;
+	height: 35px;
+	background: rgb(198, 0, 15);
+	position: absolute;
+}
+.cont .course_nav_tit {
+	font-size: 20px;
+	height: 35px;
+	line-height: 35px;
+	color: rgb(198, 0, 15);
+	font-weight: bold;
+	position: absolute;
+	left: 20px;
+}
+.cont .course_con {
+	width: 800px;
+	position: relative;
+}
+.cont .course_con .course_sta {
+	position: relative;
+	top: 200px;
+	text-align: left;
+}
+.cont .course_con .course_sta p{
+	text-indent: 32px;
+	width: 800px;
+	position: absolute;
+	font-size: 15px;
+	height: 25px;
+	line-height: 25px;
+}
+/*教师详情页*/
