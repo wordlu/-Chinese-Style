@@ -717,14 +717,16 @@ img {
 .center_cen_right_two {
 	overflow: hidden;
 	text-overflow: ellipsis;
-	background: url(../images/banner_36.png);
+	background: url(../images/teacher.jpg);
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	height: 280px;
-	width: 420px;
-	position: absolute;
-	margin: -280px 0px 0px 920px
+	height: 270px;
+	width: 270px;
+	position: relative;
+	float: left;
+	margin:30px;
+	/* margin: -280px 0px 0px 920px; */
 }
 
 .center_all {
@@ -1141,8 +1143,8 @@ img {
 .crt {
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: #fff;
-	background-color: #2F9BE6;
+	color: #040404;
+	background-color: #dadada;
 	margin-top: 200px;
 	opacity: 0.8;
 	filter: alpha(opacity=70);
@@ -1150,7 +1152,7 @@ img {
 	transition: all 0.2s;
 	padding-top: 0px;
 	text-align: center;
-	font-family: '微软雅黑'
+	font-family: '微软雅黑';
 }
 
 .center_cen_right_two:hover .crt {
@@ -1162,7 +1164,7 @@ img {
 	-webkit-border-radius: 5px;
 	padding-top: 30px;
 	border-radius: 5px;
-	background-color: #2F9BE6
+	background-color: #dadada;
 }
 
 .crt p {
@@ -1405,7 +1407,7 @@ img {
 	/*padding-left: 20px;*/
 }
 .teacher_center h1 {
-	margin-bottom: 60px;
+	/* margin-bottom: 60px; */
 }
 /*课程导航详情页*/
 .cont {
@@ -1493,4 +1495,8 @@ img {
 	font-weight: bold;
 	font-size: 40px;
 	border-bottom: 1px solid #dddddd;
+}
+/*关于我们页*/
+.teacher_center .tab_intro {
+padding-left: 12px;
 }
