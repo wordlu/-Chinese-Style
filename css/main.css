@@ -1500,3 +1500,11 @@ img {
 .teacher_center .tab_intro {
 padding-left: 12px;
 }
+
+/*咨询*/
+.teacher_center textarea {
+	position: absolute;
+	margin-top: 30px;
+	left: 30px;
+	width: 800px;
+}
