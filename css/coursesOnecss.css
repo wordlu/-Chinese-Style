@@ -3,9 +3,9 @@
 
 .teacher_center h1{
 	font-size: 18px;
-	margin-top:50px;
+	margin: 50px;
 	color: #040404;
-	margin-left:105px;
+	/* margin-left:105px; */
 	font-family:"微软雅黑";
 	}
 .hra{

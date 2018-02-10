@@ -510,7 +510,7 @@ img {
 	width: 100%;
 	height: auto;
 	float: left;
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-bottom: 18px;
 }
 .col_list_con  .col_tab a.tab_more {
@@ -1490,11 +1490,12 @@ img {
 .teacher_center .stu_work {
 	text-align: center;
 	margin-top: 40px;
+	margin-bottom: 10p;
 	color: rgb(198, 0, 15);
 	font-family: "楷体";
 	font-weight: bold;
 	font-size: 40px;
-	border-bottom: 1px solid #dddddd;
+	/* border-bottom: 1px solid #dddddd; */
 }
 /*关于我们页*/
 .teacher_center .tab_intro {
@@ -1502,9 +1503,62 @@ padding-left: 12px;
 }
 
 /*咨询*/
-.teacher_center textarea {
-	position: absolute;
-	margin-top: 30px;
-	left: 30px;
+.teacher_center .div_ques{
+	/* width: 800px; */
+	text-align: center;
+}
+.teacher_center #ques	{
 	width: 800px;
+	height: 300px;
+	color: #666;
+	font-size: 16px;
+	line-height: 20px;
+	/* position: absolute; */
+	/* top: 30px */
+}
+.teacher_center .div_ques button {
+	width: 100px;
+	height: 30px;
+	margin: 30px;
+}
+/*学员作品*/
+.col_list .stu_work_pic li{
+	margin-bottom: 30px;
+}
+
+/*分页*/
+.page_num {
+	position: relative;
+	top: px;
+	padding-bottom: 15px;
+	padding-top: 80px;
+	/* border-top: 1px solid #e9e9e9; */
+	text-align: center;
+	/* margin-top: 30px; */
+}
+.page_num a {
+	text-decoration: none;
+	padding: 10px 13px;
+	margin: 0 2px;
+	border: 1px solid #ccc;
+	background: #fff;
+	color: #333;
+	font-size: 12px;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px #dedede;
+}
+.page_num .a1 {
+	background: #cc0000;
+	color: #fff;
+	border: 1px solid #cc0000;
+}
+/*荣誉*/
+.photoblock .honor_cla {
+	text-align: left;
+	margin-left: 60px;
+	font-weight: normal;
+	color: #a11919;
+	font-size: 25px;
+	border-bottom: 5px solid #a11919;
+	width: 100px;
 }
