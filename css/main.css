@@ -1521,6 +1521,14 @@ padding-left: 12px;
 	height: 30px;
 	margin: 30px;
 }
+.teacher_center input {
+	width: 800px;
+	height: 30px;
+	margin-top: 15px;
+	color: #666;
+	font-size: 16px;
+	line-height: 20px;
+}
 /*学员作品*/
 .col_list .stu_work_pic li{
 	margin-bottom: 30px;
