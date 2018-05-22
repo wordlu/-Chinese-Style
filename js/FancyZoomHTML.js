@@ -1,9 +1,3 @@
-// FancyZoomHTML.js - v1.0
-// Used to draw necessary HTML elements for FancyZoom
-//
-// Copyright (c) 2008 Cabel Sasser / Panic Inc
-// All rights reserved.
-
 function insertZoomHTML() {
 
 	// All of this junk creates the three <div>'s used to hold the closebox, image, and zoom shadow.

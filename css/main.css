@@ -377,11 +377,11 @@ img {
 	font-size: 15px;
 	text-align: right;
 	margin-top: 20px;
-	color: #990000;
 	cursor: pointer;
 	/* float: left; */
 	position: relative;
 }
+.detail a {color: #990000;}
 .detail a:hover{
 	font-weight: bold;
 
@@ -1570,3 +1570,17 @@ padding-left: 12px;
 	border-bottom: 5px solid #a11919;
 	width: 100px;
 }
+
+/*lanrenzhijia*/
+.banner{width:100%;overflow:hidden;position:relative;}
+.banner_inner{position:relative;height:620px;width:1920px;margin:0 auto;}
+
+.banner_img{width:100%; }
+.banner_img li{float:left;width:1903px;position:relative; height:520px; }
+
+.banner_common{position:relative;width:990px;margin:0 auto}
+.banner_pre:hover, .banner_next:hover{opacity:1;filter:alpha(opacity=100)}
+.banner .control{width:130px;position:absolute;top:473px;left:50%;margin-left:-40px}
+.banner .control li{float:left;margin-left:10px;width:16px;height:16px;border-radius: 50%; cursor:pointer;background:#fff}
+.banner .control li a{display:none}
+.banner .control li.current{background:#d20001;}

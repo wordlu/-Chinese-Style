@@ -2,12 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>加入我们</title>
+<title>在线咨询</title>
 <link href="css/main.css" rel="stylesheet" type="text/css"/>
 <link href="css/teacher.css" rel="stylesheet" type="text/css"/>
 <link href="css/coursesOnecss.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="js/indexjs.js"></script>
 <script type="text/javascript" src="js/jquery-1.4.4.js"></script>
+<style type="text/css">
+	.error {color:#e50012;}
+</style>
 </head>
 
 <body>
@@ -24,35 +27,39 @@
 <!-- end -->
 <!-- 导航栏 -->
 <div class="nav">
-	<div class="header_ul">
-		<li class="header_li"><a class="logoa" href="index.html">首页</a></li>
-		<li class="header_li"><a class="logoa"  href="course-child.html">课程导航</a></li>
-		<li class="header_li"><a class="logoa"  href="teacher.html">教师风采</a></li>
-		<li class="header_li"><a class="logoa"  href="student.html">学员天地</a></li>
-		<li class="header_li"><a class="logoa"  href="about-company.html">关于我们</a></li>
-		<li class="header_li"><a class="logoa"  href="advisory.html">在线咨询</a></li>
-	</div>
+	 <div class="header_ul">
+            <li class="header_li"><a class="logoa"  href="index.html">首页</a></li>
+            <li class="header_li"><a class="logoa"  href="course-child.html">课程导航</a></li>
+            <li class="header_li"><a class="logoa"  href="teacher.html">教师风采</a></li>
+            <li class="header_li"><a class="logoa"  href="student.html">学员天地</a></li>
+            <li class="header_li"><a class="logoa"  href="about-company.html">关于我们</a></li>
+            <li class="header_li"><a class="logoa"  href="resource.html">资源下载</a></li>
+            <li class="header_li"><a class="logoa"  href="advisory.html">在线咨询</a></li>
+    </div>
 </div>
 <!-- end -->
 <div style="width:100%; height:350px; background:url(images/banner10.jpg) no-repeat center bottom ;">
 
 </div>
-			<div class="ddiv">
+	<div class="ddiv">
         <div class="teacher_center" style="height:800px;" >
         	<h1 style="text-align: center; font-size: 25px;">在线咨询</h1>
-            <!--<hr color="#46474C" class="hra"  style="width:80px;" size="1" />-->
-            <!--<hr color="#BAC9C6"  class="hrb" style="margin-left:188px;" size="1" />-->
-			<form action="#">
-				<div class="div_ques">
-					<textarea  id="ques">请输入您的问题：</textarea><br>
-					<input type="text" value="请输入姓名："><br>
-					<input type="text"  value="请输入联系方式:"><br>
-					<button>提交</button>
-				</div>
-			</form>
-
-
-            
+			<div class="div_ques">  
+                    <ul class="reg-box">                   
+                        <li>  
+                           <textarea  id="ques" class="account">*请输入您的问题：</textarea><br>
+                            <span class="error error5"></span>  
+                        </li>  
+                        <li>  
+                           <input type="text"  class = "account form-control" placeholder="*请输入姓名：" /><span class="error error6"></span>  
+                        </li>  
+                         <li>  
+                           <input type="text"  class = "admin_pwd form-control" placeholder="*请输入联系方式：" /><span class="error error6"></span>  
+                        </li> 
+                    </ul>  
+                    <button>提交</button>                    
+                </form>  
+            </div>   
         </div>
        </div>
        <a name="foot"></a>
@@ -93,6 +100,52 @@
 		</div>
 	</div>
 </div>
-        
+ <script type="text/javascript" src="../js/jquery-1.4.4.js"></script>  
+ <script type="text/javascript">     
+    //文本框默认提示文字  
+    $(function(){     
+       
+        //姓名输入框失去焦点  
+        (function login_validate(){  
+            $(".reg-box .account").blur(function(){  
+                if( $(this).val()==""|| $(this).val()=="请输入姓名：")  
+                {   
+                    $(this).addClass("errorC");  
+                    $(this).next().html("姓名不能为空！");  
+                    $(this).next().css("display","block");  
+                }  
+                
+                else  
+                {  
+                    $(this).addClass("checkedN");  
+                    $(this).removeClass("errorC");  
+                    $(this).next().empty();  
+                }  
+            });  
+            /*联系方式输入框失去焦点*/  
+            $(".reg-box .admin_pwd").blur(function(){  
+                reg=/^1\d{10}$/;  
+                  
+                if($(this).val()==""|| $(this).val()=="请输入联系方式："){  
+                    $(this).addClass("errorC");  
+                    $(this).next().html("联系方式不能为空！");  
+                    $(this).next().css("display","block");  
+                  
+                }else if(!reg.test($(".admin_pwd").val()))  
+                {  
+                    $(this).addClass("errorC");  
+                    $(this).next().html("请输入正确的联系方式！");  
+                    $(this).next().css("display","block");  
+                }else  
+                {  
+                    $(this).addClass("checkedN");  
+                    $(this).removeClass("errorC");  
+                    $(this).next().empty();  
+                }  
+            });  
+        })();  
+    });   
+  
+</script>        
 </body>
 </html>

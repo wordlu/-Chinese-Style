@@ -1,16 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>唯尔课程常规班</title>
+<title>国乐书法</title>
 <link href="css/main.css" rel="stylesheet" type="text/css"/>
 <link href="css/teacher.css" rel="stylesheet" type="text/css"/>
 <link href="css/coursesOnecss.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="js/indexjs.js"></script>
 <script type="text/javascript" src="js/jquery-1.4.4.js"></script>
+<script src="js/FancyZoom.js" language="JavaScript" type="text/javascript"></script>
+<script src="js/FancyZoomHTML.js" language="JavaScript" type="text/javascript"></script>
 </head>
 
-<body>
+<body  onLoad="setupZoom();"> 
+	<!-- 调用fansyzoom插件 -->
 <!--顶部-->
 <!-- header -->
 <div class="header" >
@@ -25,16 +27,17 @@
 <!-- 导航栏 -->
 <div class="nav">
 	<div class="header_ul">
-		<li class="header_li"><a class="logoa" href="index.html">首页</a></li>
-		<li class="header_li"><a class="logoa"  href="course-child.html">课程导航</a></li>
-		<li class="header_li"><a class="logoa"  href="teacher.html">教师风采</a></li>
-		<li class="header_li"><a class="logoa"  href="student.html">学员天地</a></li>
-		<li class="header_li"><a class="logoa"  href="about-company.html">关于我们</a></li>
-		<li class="header_li"><a class="logoa"  href="advisory.html">在线咨询</a></li>
-	</div>
+			<li class="header_li"><a class="logoa"  href="index.html">首页</a></li>
+			<li class="header_li"><a class="logoa"  href="course-child.html">课程导航</a></li>
+			<li class="header_li"><a class="logoa"  href="teacher.html">教师风采</a></li>
+			<li class="header_li"><a class="logoa"  href="student.html">学员天地</a></li>
+			<li class="header_li"><a class="logoa"  href="about-company.html">关于我们</a></li>
+			<li class="header_li"><a class="logoa"  href="resource.html">资源下载</a></li>
+			<li class="header_li"><a class="logoa"  href="advisory.html">在线咨询</a></li>
+		</div>
 </div>
 <!-- end -->
-<div style="width:100%; height:350px; background:url(images/banner10.jpg) no-repeat center bottom ;">
+<div style="width:100%; height:350px; background:url(images/banner10.jpg) no-repeat;background-size: 130% 100%;">
 
 </div>
       <div  class="ddiv">
@@ -46,13 +49,49 @@
 						<!--<a href="#" class="tab_more fl" id="col_teacher"><h2>学员作品</h2></a>-->
 					</div>
 					<li class="col_teacher">
-						<a href="#" title="学员作品">
+						<a href="images/col_stu4.jpg" title="王晓彤">
 							<img src="images/col_course3.jpg" alt="学员作品">
 							<cite>王晓彤-《颜体书法》</cite>
 						</a>
 					</li>
 					<li class="col_teacher">
-						<a href="#" title="学员作品">
+						<a href="images/col_course2.jpg" title="张宇">
+							<img src="images/col_teacher2.jpg" alt="学员作品">
+							<cite>张宇-《欧体书法作品》</cite>
+						</a>
+					</li>
+					<li class="col_teacher">
+						<a href="images/col_stu4.jpg" title="学员作品">
+							<img src="images/col_course3.jpg" alt="学员作品">
+							<cite>王晓彤-《颜体书法》</cite>
+						</a>
+					</li>
+					<li class="col_teacher">
+						<a href="images/col_stu4.jpg" title="学员作品">
+							<img src="images/col_teacher2.jpg" alt="学员作品">
+							<cite>张宇-《欧体书法作品》</cite>
+						</a>
+					</li>
+					<li class="col_teacher">
+						<a href="images/col_stu4.jpg" title="学员作品">
+							<img src="images/col_course3.jpg" alt="学员作品">
+							<cite>王晓彤-《颜体书法》</cite>
+						</a>
+					</li>
+					<li class="col_teacher">
+						<a href="images/col_stu4.jpg" title="学员作品">
+							<img src="images/col_teacher2.jpg" alt="学员作品">
+							<cite>张宇-《欧体书法作品》</cite>
+						</a>
+					</li>
+					<li class="col_teacher">
+						<a href="images/col_stu4.jpg" title="学员作品">
+							<img src="images/col_course3.jpg" alt="学员作品">
+							<cite>王晓彤-《颜体书法》</cite>
+						</a>
+					</li>
+					<li class="col_teacher">
+						<a href="images/col_stu4.jpg" title="学员作品">
 							<img src="images/col_teacher2.jpg" alt="学员作品">
 							<cite>张宇-《欧体书法作品》</cite>
 						</a>
@@ -70,53 +109,17 @@
 						</a>
 					</li>
 					<li class="col_teacher">
-						<a href="#" title="学员作品">
-							<img src="images/col_course3.jpg" alt="学员作品">
-							<cite>王晓彤-《颜体书法》</cite>
-						</a>
-					</li>
+					<a href="#" title="学员作品">
+						<img src="images/col_course3.jpg" alt="学员作品">
+						<cite>王晓彤-《颜体书法》</cite>
+					</a>
+				</li>
 					<li class="col_teacher">
 						<a href="#" title="学员作品">
 							<img src="images/col_teacher2.jpg" alt="学员作品">
 							<cite>张宇-《欧体书法作品》</cite>
 						</a>
 					</li>
-					<li class="col_teacher">
-						<a href="#" title="学员作品">
-							<img src="images/col_course3.jpg" alt="学员作品">
-							<cite>王晓彤-《颜体书法》</cite>
-						</a>
-					</li>
-					<li class="col_teacher">
-						<a href="#" title="学员作品">
-							<img src="images/col_teacher2.jpg" alt="学员作品">
-							<cite>张宇-《欧体书法作品》</cite>
-						</a>
-					</li>
-					<li class="col_teacher">
-						<a href="#" title="学员作品">
-							<img src="images/col_course3.jpg" alt="学员作品">
-							<cite>王晓彤-《颜体书法》</cite>
-						</a>
-					</li>
-					<li class="col_teacher">
-						<a href="#" title="学员作品">
-							<img src="images/col_teacher2.jpg" alt="学员作品">
-							<cite>张宇-《欧体书法作品》</cite>
-						</a>
-					</li>
-					<!--<li class="col_teacher">-->
-					<!--<a href="#" title="学员作品">-->
-						<!--<img src="images/col_course3.jpg" alt="学员作品">-->
-						<!--<cite>王晓彤-《颜体书法》</cite>-->
-					<!--</a>-->
-				<!--</li>-->
-					<!--<li class="col_teacher">-->
-						<!--<a href="#" title="学员作品">-->
-							<!--<img src="images/col_teacher2.jpg" alt="学员作品">-->
-							<!--<cite>张宇-《欧体书法作品》</cite>-->
-						<!--</a>-->
-					<!--</li>-->
 
 
 				</div>

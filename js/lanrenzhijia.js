@@ -1,7 +1,6 @@
-/* 代码整理：懒人之家 www.lanrenzhijia.com */
-var G = {};
-G.util = {}; // 工具相关
 
+var G = {};
+G.util = {};
 G.util.token_post = function(options){
     var opt=jQuery.extend({
 			  "type":"POST",
@@ -10,12 +9,11 @@ G.util.token_post = function(options){
 			  "timeout":8000
 	        }, options);
 	
-	//加上token值
 	if(G.util.getACSRFToken()){
 		opt.url=options.url+"&token="+G.util.getACSRFToken();
 	}
 	
-	//调用jQuery AJAX
+	//锟斤拷锟斤拷jQuery AJAX
 	jQuery.ajax(opt);
 };
  
